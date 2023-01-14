@@ -12,6 +12,7 @@ class User(db.Model, UserMixin):
     username = db.Column(db.String(50), nullable=False, unique=True)
     password = db.Column(db.String(256), nullable=False)
     date_created = db.Column(db.DateTime, nullable=False, default=datetime.utcnow)
+    addresses = db.relationship('Address', backref='author', lazy='dynamic')
 
 #evertime a new user is created, this init function runs
     def __init__(self, **kwargs):
@@ -45,4 +46,15 @@ class Address(db.Model):
         db.session.commit()
 
     def __repr__(self):
-        return f"<Address {self.id} | {self.address}>"       
+        return f"<Address {self.id} | {self.address}>" 
+
+    #update address
+    def update(self, **kwargs):
+        for key, value in kwargs.items():
+            if key in {'first_name', 'last_name', 'phone_number', 'address'}:
+                setattr(self, key, value)
+        db.session.commit()
+
+    def delete(self):
+        db.session.delete(self)
+        db.session.commit()
