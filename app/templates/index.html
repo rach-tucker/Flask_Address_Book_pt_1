@@ -4,7 +4,7 @@
 
 {% block content %} 
 {% if current_user.is_authenticated %}
-    <h1 class="text-center">Welcome Back, {{ current_user.username }}!</h1>
+    <h1 class="text-center mt-5 mb-5">Welcome Back, {{ current_user.username }}!</h1>
     <img src="https://m.media-amazon.com/images/I/41pzwhOAL-L._AC_SY780_.jpg" class="mx-auto d-block" alt="...">
 {% else %}
     <h1 class="text-center mt-5">Welcome to the Froggy Phone Book</h1>
