@@ -3,7 +3,7 @@ from app import app
 
 # Call the application factory function to construct a Flask application
 # instance using the development configuration
-app = app()
+app = app
 
 # Create an instance of Freezer for generating the static files from
 # the Flask application routes ('/', '/breakfast', etc.)

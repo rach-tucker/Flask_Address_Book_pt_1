@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Address Book |  Home </title>
+</head>
+<body class="bg" style="background-color:rgb(172, 151, 134)">
+
+    <nav class="border navbar navbar-expand-lg navbar-light" style="background-color: #92ac57;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Phone Book</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        
+            <a class="nav-link" href="/signup">Sign Up</a>
+            <a class="nav-link" href="/login">Log In</a>
+        
+    </div>
+    </div>
+</div>
+</nav> 
+    <div class="container"> 
+        
+    
+        
+            <div class="alert alert-warning  alert-dismissible fade show" role="alert" style="background-color:beige">
+                <strong>You have been logged out</strong> 
+                <button type="button" class="btn-close" style="background-color:beige" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        
+    
+   
+
+        <!--Main Content-->
+         
+
+    <h1 class="text-center mt-5">Welcome to the Froggy Phone Book</h1>
+    <img src="https://m.media-amazon.com/images/I/41pzwhOAL-L._AC_SY780_.jpg" class="mx-auto d-block mt-5" alt="...">
+
+
+
+    <div class="card mt-5">
+        <div class="card-header">
+        Brian Tucker
+        </div>
+        <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>333-333-3333</p>
+            <p>123 Happy Lane</p>
+            <footer class="blockquote-footer">BTucker on
+                <cite title="Source Title">Friday, January 13 at 03:45AM</cite>
+            </footer>
+        </blockquote>
+        <a href="/addresses/1" class="btn btn-secondary mt-3">See More</a>
+        </div>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+        Rachel Tucker
+        </div>
+        <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>111-111-1111</p>
+            <p>1 Make Believe St.</p>
+            <footer class="blockquote-footer">BTucker on
+                <cite title="Source Title">Friday, January 13 at 03:49AM</cite>
+            </footer>
+        </blockquote>
+        <a href="/addresses/3" class="btn btn-secondary mt-3">See More</a>
+        </div>
+    </div>
+
+    <div class="card mt-5">
+        <div class="card-header">
+        Laila Schnuazer
+        </div>
+        <div class="card-body">
+        <blockquote class="blockquote mb-0">
+            <p>111-111-1111</p>
+            <p>3 woof Rd. </p>
+            <footer class="blockquote-footer">LSchnuazer on
+                <cite title="Source Title">Saturday, January 14 at 12:15AM</cite>
+            </footer>
+        </blockquote>
+        <a href="/addresses/5" class="btn btn-secondary mt-3">See More</a>
+        </div>
+    </div>
+
+
+
+    </div>
+
+    <script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>

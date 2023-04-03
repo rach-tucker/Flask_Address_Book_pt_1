@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href = "https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css">
+    <title>Address Book |  Login </title>
+</head>
+<body class="bg" style="background-color:rgb(172, 151, 134)">
+
+    <nav class="border navbar navbar-expand-lg navbar-light" style="background-color: #92ac57;">
+  <div class="container-fluid">
+    <a class="navbar-brand" href="/">Phone Book</a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+    <div class="navbar-nav">
+        <a class="nav-link" href="/">Home</a>
+        
+            <a class="nav-link" href="/signup">Sign Up</a>
+            <a class="nav-link" href="/login">Log In</a>
+        
+    </div>
+    </div>
+</div>
+</nav> 
+    <div class="container"> 
+        
+    
+        
+            <div class="alert alert-danger  alert-dismissible fade show" role="alert" style="background-color:beige">
+                <strong>You must be logged in to perform this action</strong> 
+                <button type="button" class="btn-close" style="background-color:beige" data-bs-dismiss="alert" aria-label="Close"></button>
+            </div>
+        
+    
+   
+
+        <!--Main Content-->
+        
+<form action="" class = "row justify-content-center border rounded mt-5 p-5" style="background-color: #92ac57" method="post">
+    <h1 class="text-center">Log In</h1>
+    <input id="csrf_token" name="csrf_token" type="hidden" value="ImYzN2Q5MTA2MzEyMTc0OGNlYTAyYzE2NGY0YTllZjk3ZGUxZTM0MmEi.ZCpRcQ.vs-YMkv0IyJoF0GiltN6XhGRjAQ">
+
+    <label for="username">Username</label>
+    <input class="form-control" id="username" name="username" placeholder="Enter Username" required type="text" value="">
+
+    <label for="password">Password</label>
+    <input class="form-control" id="password" name="password" placeholder="Enter Password" required type="password" value="">
+
+    <input class="btn btn-dark 1-100 mt-3 col-5" id="submit" name="submit" type="submit" value="Submit">
+</form>
+
+    </div>
+
+    <script src ="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+</body>
+</html>
